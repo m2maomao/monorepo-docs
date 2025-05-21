@@ -5,6 +5,7 @@ const App = () => {
     <div>
       <h1>Monorepo Demo App</h1>
       <p>Today is: {formatDate(new Date())}</p>
+      <a href="/docs/" target="_blank">文档</a>
     </div>
   )
 }

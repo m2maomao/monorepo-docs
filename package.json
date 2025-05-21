@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "pnpm --filter @demo/app dev",
-    "build": "turbo run build",
+    "build": "pnpm build:docs && pnpm --filter @demo/app build",
+    "build:docs": "pnpm --filter @demo/docs build && node scripts/build-docs.js",
+    "preview": "pnpm --filter @demo/app preview",
     "test": "pnpm -r test",
     "build:utils": "turbo run build:utils --filter=@demo/utils"
   },
