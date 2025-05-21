@@ -39,3 +39,6 @@ packages/docs/.vitepress/dist
 
 # Testing
 coverage
+
+#docs
+packages/app/public/docs
